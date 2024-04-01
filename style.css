@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;;
+    box-sizing: border-box;
+}
+
+header{
+}
+
+header .firstLine{
+    margin: 30px 0px 30px 0px;
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". title photo ."
+    ". desc photo ."
+    ". red photo .";
+    justify-items: center;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+header div h1{
+    justify-self: start;
+    grid-area: title;
+}
+
+header div .redes{
+    grid-area: red;
+    justify-self: start;
+
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    list-style-type: none;
+}
+
+header ul li i{
+    padding: 5px;
+    border-radius: 8px;
+    justify-self: start;
+    font-size: 25px;
+    color: grey;
+    border: 3px solid rgb(153, 153, 153);
+}
+
+header div img{
+    justify-self: center;
+    grid-area: photo;
+    border-radius: 25px;
+    width: 170px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.548);
+}
+
+header p{
+    width: 500px;
+    text-align: start;
+    grid-area: desc;
+    color: grey;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;;
+}
